@@ -1,9 +1,6 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view class="text-area">
-			<button class="cu-btn round shadow bg-red">按钮</button>
-		</view>
+		首页
 	</view>
 </template>
 
@@ -23,7 +20,7 @@
 		methods: {
 			test () {
 				this.$ajax({
-					url: '/a',
+					url: '/marketing',
 					method: 'get',
 					data: {
 						page: 1,

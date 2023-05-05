@@ -1,6 +1,6 @@
 {
     "name" : "uni-app-base-frame",
-    "appid" : "__UNI__3F9C10E",
+    "appid" : "__UNI__B534FE6",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -66,7 +66,12 @@
                     }
                 }
             }
-        }
+        },
+        "router" : {
+            "base" : "./"
+        },
+        "title" : "全民营销",
+        "template" : "template.html"
     },
     /* 小程序特有相关 */
     "mp-weixin" : {
