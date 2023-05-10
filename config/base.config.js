@@ -1,7 +1,7 @@
 // 一些基本的数据
 const base = {
 	// #ifdef H5
-	HOST: 'https://ygj-base-client-dev.dev.lishicloud.com/marketing',
+	HOST: 'https://ygj-base-client-dev.dev.lishicloud.com',
 	// #endif
 	// #ifndef H5
 	// #endif

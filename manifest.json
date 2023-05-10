@@ -53,18 +53,15 @@
     "quickapp" : {},
     "h5" : {
         "devServer" : {
-            "https" : false,
             "port" : 8080,
+            "https": false,
             "disableHostCheck" : true,
             "proxy" : {
-                "/h5" : {
-                    "target" : "https://lishicloud.com",
+                "/api" : {
+                    "target" : "http://ygj-base-client-dev.dev.lishicloud.com",
                     "changeOrigin" : true,
-                    "ws" : true,
-                    "pathRewrite" : {
-                        "^/h5" : ""
-                    }
-                }
+                    "secure" : true 
+                 }
             }
         },
         "router" : {

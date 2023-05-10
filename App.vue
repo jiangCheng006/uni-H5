@@ -45,3 +45,6 @@ export default {
 /*每个页面公共css */
 @import url("styles/basic.less");
 </style>
+<style scoped lang="scss">
+@import "uview-ui/index.scss";
+</style>

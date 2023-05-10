@@ -69,7 +69,8 @@ function Ajax(opt) {
 			if (opt.isAuthSys) { // 是否是权限系统接口
 				url = opt.url
 			} else {
-				url = base.HOST + opt.url
+			    const baseUrl = process.env.NODE_ENV === 'development' ? '' :  base.HOST
+				url = baseUrl + opt.url
 			}
 		} else { // 如果请求是其他服务器上的接口
 			url = opt.url

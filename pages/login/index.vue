@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		首页
+		<u-button text="月落"></u-button><u-tag text="标签" plain size="mini" type="warning"></u-tag>
 	</view>
 </template>
 
@@ -11,23 +11,17 @@
 				title: 'Hello'
 			}
 		},
-		mounted () {
-			this.test()
-		},
 		onLoad() {
 			this.test()
 		},
 		methods: {
 			test () {
 				this.$ajax({
-					url: '/marketing',
+					url: '/api/decoration/noticelist/list?type=1410003',
 					method: 'get',
-					data: {
-						page: 1,
-						pageSize: 10
-					}
 				}).then(res => {
 					console.log('success', res)
+					this.title = res.data
 				}).catch(err => {
 					console.log('fail', err)
 				})

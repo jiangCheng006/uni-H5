@@ -4,7 +4,6 @@
   "description": "uni-app通用版本",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -13,6 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dayjs": "^1.10.4"
+    "dayjs": "^1.10.4",
+    "uview-ui": "^2.0.31"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "~4.5.15",
+    "cross-env": "^7.0.2"
   }
 }
